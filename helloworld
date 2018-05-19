@@ -1,11 +1,16 @@
-using System;
-namespace Classes
+/* program to demonstrate class
+OUTPUT : hello world */
+
+using System;//adding the namespace system
+namespace Classes//collection of classes
 {
-    class MainClass
+    class MainClass//main class
     {
-        static void Main(String[] args)
+        static void Main(String[] args)//main method
         {
-           System.Console.WriteLine("Hello world");
+           //passing argumentof type string "hello world" to method "WriteLine" from class "Console" From namespace "System"
+            System.Console.WriteLine("Hello world");
+           //and will output hello world in console. 
         }    
     }   
 }
