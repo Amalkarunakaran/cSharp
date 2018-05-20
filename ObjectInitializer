@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+namespace ConstructorNS
+{ 
+    public class Person
+    {
+        //field members of class Person
+        public int Id;
+        public string FirstName;
+        public string LastName;
+        public DateTime DateOfBirth; 
+       
+        //constructors with fields ..of class Person
+        public Person(){...}//Default construcor/Parameter-less constructor.
+        public Person(int Id){...}
+        public Person(int Id, string FirstName){...}
+        public Person(int Id,string FirstName,string LastName){...}
+        public Person(int Id,string FirstName,string LastName,DateTime DateOfBirth){...}
+
+        //with obect initializer ...we don't need any of this constructors...
+        //We can simply initialize a person object like this.
+        var person = new Person
+        {//object initialization syntax
+            Id=22,
+            FirstName="amal",
+            LastName="K",
+            DateOfBirth=20/10/1993
+
+        };//object initialization syntax
+        //when this called...in back..a default constructor will called and initialize deault values and replace values give .
+        //an object cannot behave...without passing some initial values..
+    }
+}
