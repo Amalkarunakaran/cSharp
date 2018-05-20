@@ -1,3 +1,7 @@
+/* program to demonstrate constructor
+OUTPUT : 
+*/
+
 using System;
 namespace ConstructorNS
 {
